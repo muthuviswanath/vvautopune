@@ -22,15 +22,51 @@ When clicked on Submit Button, it has to take to thankyou.html page
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact-Form</title>
+    <!--External Style Sheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--Internal style Sheet-->
+    <style>
+        /*class = represent using .*/
+        /* id = represent using # */
+        /* tag = represent using tag name directly */
+        .container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding:20px;
+        }
+        .box{
+            background-color: #fff;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 450px;
+            padding: 20px;
+            line-height: 28px;
+        }
+        input[type="submit"]{
+            background-color: #0077ff;
+            color: white;
+        }
+        a{
+            text-decoration:none;
+            margin-right: 20px;
+            box-sizing: content-box;
+            background-color: crimson;
+            color: white;
+            font-size: 20px;
+            border: #000 2px solid;
+            border-radius: 30px;
+            padding: 5px 10px 5px 10px;
+        }
+    </style>
+
   </head>
   <body>
-    <div>
-      <div
-        style="
-          font-family: Verdana, Geneva, Tahoma, sans-serif;
-          font-size: small;
-        "
-      >
+    <!-- A style attribute along with the tag is calle as inline style sheet -->
+    <div class="container">
+        <a href="NewspaperFormat.html"><< Back</a>
+      <div class="box">
         <form action="thankyou.html" method="get">
           <table>
             <!-- First Row-->

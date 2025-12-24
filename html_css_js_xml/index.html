@@ -11,5 +11,56 @@
 <span>V & V Automation</span> <!-- Inline Level Element-->
 <span>Testing</span> <!-- Inline Level Element-->
 <input type="text"> <!-- type is called as attribute and text is the value of the attribute -->
+<input type="text">
+<p style="color: brown;"><em>Lorem ipsum dolor sit amet !</em></p> <!-- The color is called as properties and the value is brown -->
+<div id="fdiv"><small> ipsum dolor sit amet consectetur ?</small></div> <!-- id is used to identify the element uniquely -->
+<div class="sections">Lorem ipsum dolor sit amet <del>consectetur</del> </div> <!-- class is used to represent elements of similar category -->
+<div class="sections" name="section3">Lorem ipsum,<ins> dolor</ins> sit.</div> <!-- name is used to represent the name of the element -->
+<!-- Headings-->
+ <!-- <h1> to <h6> -->
+<p><strong>This the script for Playwright Automation</strong></p>
+<pre>
+const {test} = require('@playwright/test')
+
+test('Seach for Playwright Automation in Google', async({page}) =>{
+    await page.goto("https://www.google.com", {waitUntil:'domcontentloaded'})
+
+    const AcceptBtn = page.locator('button:has-text("Acccept all")');
+    if(await AcceptBtn.isVisible()){
+        await AcceptBtn.click();
+    }
+
+    //Find the search box named q
+    const searchBox = page.locator('textarea[name="q"]')
+
+    //Type Playwright Automation in the search box
+    await searchBox.fill("Playwright Automation")
+
+    //Press the Enter Button
+    await searchBox.press('Enter')
+
+    //wait for the result page to be loaded
+    await page.waitForLoadState('networkidle')
+
+    //Wait for 5 seconds to close the browser
+    await page.waitForTimeout(5000)
+}
+)
+
+test.only('Seach', async({page}) =>{
+    await page.goto("https://www.magicbricks.com", {waitUntil:'domcontentloaded'})
+    await page.getByRole()
+    await page.waitForTimeout(5000)
+}
+)
+
+</pre>
+
+<!-- (A+B)^2 = (a^2 + b^2 + 2ab)-->
+ <p> (a+b)<sup>2</sup> = (a<sup>2</sup> + b<sup>2</sup> + 2ab)</p>
+ <!-- H2 + O2 = H2O -->
+  <p> H<sub>2</sub> + O<sub>2</sub> = H<sub>2</sub>O</p>
+  <hr>
+  <p>Welcome <br/> to CapGemini</p>
 </body>
 </html>

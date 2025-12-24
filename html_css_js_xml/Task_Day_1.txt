@@ -1,0 +1,16 @@
+Register.html
+
+Create a new project folder and design a form to register a user for an imaginary
+application of yours. The form should be at the center of the page. It should have
+login link and when clicked on login link, it has to route you to login page
+
+Login.html
+there must be two links
+    1. Register
+    2. Forgot password
+
+When the user click on submit whether the credentails is right or wrong, redirect
+to a dashboard page
+
+dashboard.html
+make use of the newspaper page design here

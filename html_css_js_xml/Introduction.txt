@@ -1,0 +1,13 @@
+Tags:
+    Are the representation of the markup / blocks
+    Pair Tag
+    <html></html>
+    Non-Pair Tag
+    <img /> <br />
+Elements:
+    Inline
+        Consumes the entire content width
+        <span></span>
+    Block Level:
+        Consumes the entire page width
+        <div></div>

@@ -1,0 +1,164 @@
+<!-- The task is to design a contact form with the following requirements
+ 
+First Name : Placeholder to get First Name
+Last Name : Placeholder to get Last Name
+Username : Placeholder to get username
+Password : Placeholder to get password
+Email: Placeholder to get email id
+Date of Birth : Placeholder to get dob in calendar format
+Gender : Radio button to choose one
+Prefered Work Location: Drop down list box
+Skills : Multi select list box to choose skills
+Years of Experience: Place holder that takes only numbers from 0 to 10
+Hobbies: multiple checkboxes to choose from
+Language Proficiency: Slider to choose from minimum 25% to maximum of 100%
+Clear and Submit Buttons
+When clicked on Submit Button, it has to take to thankyou.html page
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact-Form</title>
+  </head>
+  <body>
+    <div>
+      <div
+        style="
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-size: small;
+        "
+      >
+        <form action="thankyou.html" method="get">
+          <table>
+            <!-- First Row-->
+            <tr>
+                <!-- First Column-->
+              <td><label for="firstname">First Name:</label></td>
+                <!-- Second Column-->
+              <td>
+                <input
+                  type="text"
+                  name="firstname"
+                  placeholder="Enter your first name"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="lastname">Last Name:</label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  name="lastname"
+                  placeholder="Enter your last name"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="email">User Email:</label></td>
+              <td>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email id"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="username">Username:</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="username"
+                  placeholder="Enter your user name"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="password">Password:</label></td>
+              <td>
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Enter your password"
+                  required
+                />
+              </td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth</label></td>
+                <td>
+                    <input type="date" name="dob" id="dob_cal">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="gender">Gender</label></td>
+                <td><input type="radio" name="gender"> Male <br>
+                    <input type="radio" name="gender"> Female <br>
+                    <input type="radio" name="gender"> Others <br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="worklocation">Preferred Work Location</label></td>
+                <td>
+                    <select name="worklocation">
+                        <option value="Pune">Pune</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Bengaluru">Bengaluru</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Kolkata">Kolkata</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="skills">Select your Skills</label></td>
+                <td>
+                    <select name="skills" multiple="true">
+                        <option value="Java">Java</option>
+                        <option value="Selenium">Selenium</option>
+                        <option value="Javascript">Javascript</option>
+                        <option value="Python">Python</option>
+                        <option value="CSharp">C#</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="yoe">Years of Experience</label></td>
+                <td><input type="number" name="yoe" min="5" max="10"></td>
+            </tr>
+                <tr>
+                <td><label for="Hobbies">Hobbies</label></td>
+                <td>
+                    <input type="checkbox"/>Gardening<br>
+                    <input type="checkbox"/>Collecting Artifacts<br>
+                    <input type="checkbox"/>Singing<br>
+                    <input type="checkbox"/>Dancing<br>
+                </td>
+            </tr>
+            </tr>
+                <tr>
+                <td><label for="lang">German Language Level</label></td>
+                <td>
+                    <input type="range" min="25" max="100">
+                </td>
+                <tr>
+                    <td colspan="2">
+                        <input type="reset" value="Clear"> &nbsp;<input type="submit" value="Submit">
+
+                    </td>
+                </tr>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

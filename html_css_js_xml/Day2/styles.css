@@ -1,0 +1,7 @@
+
+        input[type="text"][name="fname"]{
+            color: dodgerblue;
+        }
+        input[type="password"]{
+            color: crimson;
+        }

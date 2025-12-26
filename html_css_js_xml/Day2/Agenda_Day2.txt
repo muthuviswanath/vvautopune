@@ -1,0 +1,13 @@
+1. CSS Selectors
+        - Simple Selectors (tag, id, name, class)
+        - Combinators
+                1. Child Combinator
+                        Represented using >
+                        It selects all the tags that matches in the given Parent tag
+        - Pseudo-Class Selectors
+        - Pseudo-Element Selectors
+        - Attribute Selectors
+2. Inline, Internal, Extrenal CSS
+3. Grid
+4. FlexBox
+5. BootStrap

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capgemini</title>
+    <style>
+        #div1 {
+            border: 2px solid crimson;
+            height: 100px;
+        }
+        #div2 {
+            border: 2px dotted cadetblue;
+            height: 100px;
+        }
+        .text-based {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid gray;
+            border-radius: 10px;
+        }
+        .password {
+            margin: 10px;
+            padding: 10px;
+            border: 2px dashed orange;
+            border-radius: 10px;
+        }
+        /*Child Combinator*/
+        div > p{
+            color: blue;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="div1">
+
+    </div>
+    <div id="div2">
+
+    </div>
+    <div>
+        <p>Today is the next of Christmas</p>
+        <p>This year is 2025</p>
+        <p>6 more days to New year</p>
+        First Name <input type="text" class="text-based"><br>
+        Last Name <input type="text" class="text-based"><br>
+        Username <input type="text" class="text-based"><br>
+        Password <input type="password"class="password"><br>
+    </div>
+    <div>
+        <div>
+            
+                <p>Next year is 2026</p>
+            
+            
+        </div>
+    </div>
+    
+</body>
+</html>

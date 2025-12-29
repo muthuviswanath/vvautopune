@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capgemini</title>
+</head>
+<body>
+    <p id="test-id">Welcome to the World of JavaScript</p>
+    <button onclick="changeText()">Change Text</button>
+    <button onclick="makeRoar()">Make Lion roar</button>
+    <button onclick="stopRoar()">Stop Lion roar</button>
+    <button onclick="changeCSS()">change CSS</button>
+    
+    <input type="text" id="hide-show" disabled>
+    <button onclick="hide()">Hide</button>
+    <button onclick="show()">Show</button>
+    <button onclick="loadText()">Fill Text</button>
+    <p id="sample">Lorem ipsum dolor sit amet consectetur</p>
+    <img src="lion.png" alt="lion_image" id="lion">
+    <script>
+        function changeText(){
+            document.getElementById("test-id").innerHTML = "Welcome to Capgemini";
+        }
+    </script>
+
+    <script>
+        function makeRoar(){
+            document.getElementById("lion").src="lion-roar.gif";
+        }
+
+        function stopRoar(){
+            document.getElementById("lion").src="lion.png";
+        }
+    </script>
+
+    <script>
+        function changeCSS(){
+            document.getElementById("sample").style.fontSize = "30px";
+            document.getElementById("sample").style.color = "#ff6600";
+        }
+    </script>
+    <script>
+        function hide(){
+            document.getElementById("hide-show").style.display="none";
+        }
+
+        function show(){
+            document.getElementById("hide-show").style.display="block";
+        }
+        function loadText(){
+            document.getElementById("hide-show").value = "Capgemini";
+        }
+    </script>
+</body>
+</html>

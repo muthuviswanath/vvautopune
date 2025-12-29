@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Objects</title>
+</head>
+<body>
+    <button onclick="loadObjDetails()">Load Object Details</button>
+    <button onmouseover="createObject()">Load Obj</button>
+    <button onmouseover="Car('Audi','Electric')">Create Car</button>
+    <p id="object-details">
+        Loading the object details....
+    </p>
+
+    <script>
+        function loadObjDetails(){
+            /*Creating an object through object literal*/
+            let emp = {
+                name : "Muthu",
+                empno : 34567,
+                designation : "Trainer",
+                greet(){
+                    document.getElementById("object-details").innerHTML = 
+                    `Name: ${this.name} | EmpNo: ${this.empno} | Designation: ${this.designation}`
+                }
+            }
+            emp.greet()
+        }
+
+        function createObject(){
+            const products = new Object();
+            products.name = "Laptop"
+            products.price = 456789.67
+            products.brand = "Dell"
+            products.display = function(){
+                document.getElementById("object-details").innerHTML = 
+                `Product Name: ${products.name} | Product Price: ${products.price} | Brand: ${products.brand}
+            ${products.screensize = '1234x456'} | Screensize = ${products.screensize}`;
+            }
+            products.display()
+        }
+
+        function Car(brand, fueltype){
+            this.brand = brand;
+            this.fueltype = fueltype;
+            this.showDetails = function(){
+                document.getElementById("object-details").innerHTML = 
+                `Car Brand: ${this.brand} | Fuel Type: ${this.fueltype}`
+            };
+            return this.showDetails()
+        }
+    </script>
+</body>
+</html>

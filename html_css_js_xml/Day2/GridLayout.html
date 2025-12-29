@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CapGemini</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+            "header header header header"
+            "sidenav content para article"
+            "footer footer footer footer"
+            ;
+            padding: 20px;
+            background-color: dodgerblue;
+        }
+        .container div.article{
+            grid-area: article;
+            height: 300px;
+            background-color: azure;
+            width: 200px;
+        }
+        .container div.header{
+            grid-area: header;
+            text-align: center;
+            height: 70px;
+            background-color: lightsteelblue;
+        }
+        .container div.sidenav{
+            grid-area: sidenav;
+            height: 300px;
+            background-color: darkgrey;
+        }
+        .container div.content{
+            grid-area: content;
+            height: 300px;
+            background-color: azure;
+            width: 200px;
+            margin-left: 20px;
+        }
+        .container div.footer{
+            grid-area: footer;
+            background-color: cornflowerblue;
+            text-align: center;
+            color: white;
+        }
+        .container div.paragraphs{
+            grid-area: para;
+            background-color: crimson;
+            text-align: center;
+            color: white;
+            width: 400px;
+            height: 100px;
+            margin-left: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sidenav">Side Nav</div>
+        <div class="content">Content</div>
+        <div class="paragraphs">Paragraph</div>
+        <div class="article">Article</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

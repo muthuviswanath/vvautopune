@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Elements</title>
+</head>
+<body>
+    <button onclick="createParagraph()">P</button>
+    <button onclick="createInputText()">Input-Text</button>
+    <script>
+        function createParagraph(){
+        let pTag = document.createElement("p");
+        pTag.textContent = "V&V Automation Batch Pune created this P tag using JS";
+        document.body.appendChild(pTag);
+        }
+        function createInputText(){
+        let inputText = document.createElement("input");
+        inputText.type = "text";
+        inputText.placeholder = "Enter your name";
+        inputText.style.border="5px";
+        document.body.appendChild(inputText);
+        
+        }
+    </script>
+</body>
+</html>

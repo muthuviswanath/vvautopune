@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Page</title>
+</head>
+<body>
+    <h2>My Skills List:</h2>
+    
+    <script>
+        const skills = ["Java", "JavaScript","Angular","React","NodeJs","Python", "C#"]
+        let skillslist = "<ul>"
+            for(let i=0; i<skills.length;i++){
+                skillslist += `<li>${skills[i]}</li>`
+            }
+        skillslist += "</ul>"
+        // document.getElementById("skills").innerHTML = skillslist;
+        document.write(skillslist);
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+.js is the extension of Javascript file
+
+console -> node
+web browser -> console, HTML elements
+
+Where
+
+<head>
+<script> </script>
+</head>
+
+<body>
+<script> </script>
+</body>
+
+<button onClick=""></button>
+
+What can be done using Javascript:
+
+1. Changing the HTML atrribute
+2. Change the CSS
+3. Hide/Show the elements
+4. Fill the data on a disabled text
+5. Changing the content of an element
+
+
+Browser Object Model (BOM)
+    history
+    navigator
+    
+Document Object Model (DOM)

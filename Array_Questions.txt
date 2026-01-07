@@ -1,0 +1,46 @@
+Array Based Questions:
+
+1.Find the sum of array elements
+2.Find the average of array elements
+3.Count even and odd numbers
+4.Count positive, negative, and zero elements
+5.Find the largest element
+6.Find the smallest element
+7.Find the second largest element
+8.Find the second smallest element
+9.Binary search (sorted array)
+10.First occurrence of an element
+11.Last occurrence of an element
+12.Count frequency of a given element
+13.Check if array contains duplicates
+14.Left rotate array by K positions
+15.Right rotate array by K positions
+16.Move all zeros to the end
+17.Move all zeros to the beginning
+18.Move all negative numbers to one side
+19.Rearrange array: positive first, negative later
+20.Find maximum subarray sum (Kadane’s Algorithm)
+21.Find minimum subarray sum
+22.Find subarray with given sum
+23.Print all subarrays
+24.Find missing number in array (1 to N)
+25.Find element appearing once (others twice)
+26.Find element appearing odd number of times
+27.Majority element (> n/2 times)
+28.Trapping rain water problem
+
+(Two Pointer)
+29.Pair with given sum (sorted array)
+30.Triplet with given sum
+31.Remove duplicates from sorted array
+
+(Competitive)
+32.Maximum difference between two elements
+33.Stock buy and sell (max profit)
+34.Chocolate distribution problem
+35.Longest consecutive sequence
+36.Maximum sum of non-adjacent elements
+37.Count inversions in array
+38.Find peak element
+39.Sliding window maximum
+40.Maximum sum of k consecutive elements

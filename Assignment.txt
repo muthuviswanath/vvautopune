@@ -1,0 +1,54 @@
+1. Create an Invoice for the products that is purchased by the customer and display the data according to the menu given below:
+
+1. Product Maintenance
+2. Go Shopping
+3. Display Invoice
+4. Exit
+Choose your option: 1
+
+1. Enter Product Details
+2. Search Product by ID
+3. Update the Product Info
+4. Delete the Product by ID
+5. Exit
+
+1. Product Maintenance
+2. Go Shopping
+3. Display Invoice
+4. Exit
+Choose your option: 2
+List of available Products
+---------------------------------------------------------------
+ProdId 			Product Name					Price
+---------------------------------------------------------------
+Id1				Prod1								Price1
+...
+...
+...
+...
+---------------------------------------------------------------
+Choose the product: 
+Enter the quantity required:
+Total Amount to be paid: 
+Do you want to shop more?N
+
+1. Product Maintenance
+2. Go Shopping
+3. Display Invoice
+4. Exit
+Choose your option: 3
+----------------------------------------------------------------------------------
+									Capg Mega Mart
+----------------------------------------------------------------------------------
+S.No 	|	ProductName	|	Qty 		|	Rate 	|	Amount
+----------------------------------------------------------------------------------	
+1 		 	|	Mouse				|	10 		|	234.67 |	2346.70
+2 			|	Keyboard			|	2 			| 	100.50 |	  201.00
+----------------------------------------------------------------------------------
+ 															Grand Total: 
+ 															GST Details:
+ 															CGST @ 9%:
+ 															SGST @ 9%:
+-----------------------------------------------------------------------------------
+															Total Amount:  				
+-----------------------------------------------------------------------------------

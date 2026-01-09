@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h3>XML Data</h3>
+    <button onclick="getXMLData()">Fetch XML data</button>
+    <p id="xml-output">Waiting to fetch the XML data...</p>
+
+    <p id="xml-output2">Waiting to fetch the XML data...</p>
+    <script>
+        function getXMLData(){
+        fetch("Mydata.xml")
+        .then(response => response.text())
+        .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+        .then(xml => {
+            const name = xml.getElementsByTagName("name")[0].textContent;
+            const desig = xml.getElementsByTagName("designation")[0].textContent;
+            const batch = xml.getElementsByTagName("batch")[0].textContent;
+            document.getElementById("xml-output").innerHTML = name + " | "+desig + " | "+batch;
+
+            const name2 = xml.getElementsByTagName("name")[1].textContent;
+            const desig2 = xml.getElementsByTagName("designation")[1].textContent;
+            const batch2 = xml.getElementsByTagName("batch")[1].textContent;
+            document.getElementById("xml-output2").innerHTML = name2 + " | "+desig2 + " | "+batch2;
+        })
+        }
+    </script>
+</body>
+</html>

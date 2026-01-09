@@ -1,0 +1,20 @@
+In a college there are 3 departments: CSE, ECE and EEE. Each department 
+conducts different college festivals. CSE conducts "TechFest", ECE conducts 
+"ElectroFest" and EEE conducts "EnergyFest".
+
+Create a base class called "Department" and let there be three sub classes 
+called "CSE", "ECE" and "EEE".
+
+Create the method called "CampusConnect" in the class called "College" and 
+no matter which department the student belongs to, they should be able to 
+connect to the campus network using the "CampusConnect" method.
+
+Create a class called "Department" with a method called "Graduation Ceremony" 
+which honours the students with the degree certificate. Override this method 
+in each of the sub classes to display the department name along with
+the message.
+
+Create a class called as "Student" where they are part of a department and 
+they can attend all the festivals and the events that are happening in the 
+college as well as in their respective departments.
+

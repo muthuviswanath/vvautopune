@@ -1,0 +1,9 @@
+If a super class object reference points to the subclass object, 
+it is called as upcasting.
+Using the upcasted variable, it is possible to only access the common
+behaviour(overridden behaviour)
+In case it is needed to access the sub class specific behaviour, it is not
+possible
+
+In that case, it has to be downcasted.
+

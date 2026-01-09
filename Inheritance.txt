@@ -1,0 +1,24 @@
+The child class inherits the properties of parent class
+child class can have additional properties
+we use extends key word to inherit from the parent class
+It is a way to implement method overriding
+5 types of inheritance are there
+    1. Single Level
+    2. Multi Level
+    3. Hierarchical
+    4. Multiple
+    5. Hybrid
+It supports code-reusability
+It avoids code-redundancy
+Exhibits polymorphism
+It is called as is-a relationship
+Uses super() to access the constructor of parent class
+Uses super key word to access the properties of parent class directly
+static members can be accessed but not modified (applicable to methods alone)
+in case of static variables, it can be accessed as well as modified
+final members can't be modified
+constructors are not part of inheritance
+the class that inherits the properties and behaviors of another class is called
+child/derived/sub class
+the class whose properties and behaviors are inherited is called as parent/base/super class
+at any given point of time a class can inherit exactly one class

@@ -1,0 +1,12 @@
+<capgemini>
+    <employees>
+        <name>Muthu</name>
+        <designation>Trainer</designation>
+        <batch>V and V Automation Pune</batch>
+    </employees>
+    <employees>
+        <name>Raghu</name>
+        <designation>Salesman</designation>
+        <batch>Capgemini Biomed</batch>
+    </employees>
+</capgemini>

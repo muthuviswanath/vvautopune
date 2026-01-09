@@ -1,0 +1,35 @@
+<capgemini>
+    <department name="Sales">
+        <employee>
+            <name>Ashok</name>
+            <role>Sales Executive</role>
+            <salary>45678.87</salary>
+        </employee>
+
+        <employee>
+            <name>Abhishek</name>
+            <role>Sales Associate</role>
+            <salary>25678.87</salary>
+        </employee>
+
+        <employee>
+            <name>Meghna</name>
+            <role>Sales Manager</role>
+            <salary>85678.87</salary>
+        </employee>
+    </department>
+
+    <department name="Human Resource">
+        <employee>
+            <name>Deepali</name>
+            <role>HR Executive</role>
+            <salary>65678.87</salary>
+        </employee>
+
+        <employee>
+            <name>Hitesh</name>
+            <role>HR Manager</role>
+            <salary>95678.87</salary>
+        </employee>
+    </department>
+</capgemini>

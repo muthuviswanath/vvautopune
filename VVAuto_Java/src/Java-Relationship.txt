@@ -1,0 +1,24 @@
+Has-a - Association - How one object is associated with another object
+
+    Compostion  - Tightly Coupled
+        It is an association where in the associated object is Tightly coupled.
+        The associated object cease to exist without the owner object.
+        Strong has-a relationship
+        The associated object will be created inside the owner object's class
+
+        Conductor issues ticket
+
+        class Conductor
+
+        Ticket issues(Money m, String destination){
+            Ticket t = new Ticket();
+            return t;
+        }
+
+    Aggregation - Loosely Coupled (IoC)
+        It is an association where in the associated object is lossely coupled.
+        The associated object continues to exist without the owner object.
+        Weak has-a relationship
+        Object Reference to the associated object will be created inside the owner object's
+        class.
+Is-a

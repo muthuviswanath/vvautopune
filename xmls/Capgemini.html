@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capgemini XML Data Viewer</title>
+  </head>
+  <body>
+    <h2>Capgemini Data</h2>
+    <button onclick="getXmlData()">Get Data</button>
+    <div id="xml-output"></div>
+
+    <script>
+      function getXmlData() {
+        fetch("Capgemini.xml")
+          .then((res) => res.text())
+          .then((text) => {
+            const xml = new DOMParser().parseFromString(text, "text/xml");
+            const departments = xml.getElementsByTagName("department");
+            let html = "";
+
+            for (let i = 0; i < departments.length; i++) {
+              html += `<h3> Department Name: ${departments[i].getAttribute("name")}</h3>`;
+              const employees = departments[i].getElementsByTagName("employee");
+              for (let emp = 0; emp < employees.length; emp++) {
+                const name =
+                  employees[emp].getElementsByTagName("name")[0].textContent;
+                const role =
+                  employees[emp].getElementsByTagName("role")[0].textContent;
+                const sal =
+                  employees[emp].getElementsByTagName("salary")[0].textContent;
+                html += `<p> ${name} | ${role} | ${sal} </p>`;
+              }
+            }
+            document.getElementById("xml-output").innerHTML = html;
+          });
+      }
+    </script>
+  </body>
+</html>
